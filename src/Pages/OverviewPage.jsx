@@ -1,5 +1,8 @@
 import Header from "../components/re-usable-components/Header"
 import StatCard from "../components/re-usable-components/StatCard";
+import SalesOverviewChart from "../components/Overview/SalesOverviewChart";
+import CategoryDistributionChart from "../components/Overview/CategoryDistributionChart";
+import SalesChannelChart from "../components/Overview/SalesChannelChart";
 import { motion } from "framer-motion"
 import { LuZap } from "react-icons/lu";
 import { HiUsers } from "react-icons/hi";
@@ -25,6 +28,14 @@ function OverviewPage() {
                     <StatCard name='Total Products' icon={HiMiniShoppingBag} value='487' color='#ec4899' />
                     <StatCard name='Conversion Rate' icon={BsBarChart} value='14.6%' color="#10b981" />
                 </motion.div>
+
+                {/* Chart */}
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <SalesOverviewChart />
+                    <CategoryDistributionChart />
+                    <SalesChannelChart />
+                </div>
             </main>
         </div>
     )
