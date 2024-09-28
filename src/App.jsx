@@ -3,6 +3,7 @@ import OverviewPage from './Pages/OverviewPage';
 import ProductsPage from './Pages/ProductsPage';
 import SideBar from './components/SideBar';
 import UsersPage from './Pages/UsersPage';
+import SalesPage from './Pages/SalesPage';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<OverviewPage />} />
         <Route path='/products' element={<ProductsPage />} />
-        <Route path='users' element={<UsersPage />} />
+        <Route path='/users' element={<UsersPage />} />
+        <Route path='/sales' element={<SalesPage />} />
       </Routes>
     </div>
   )
